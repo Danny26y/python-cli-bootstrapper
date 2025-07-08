@@ -14,7 +14,7 @@ A command-line tool to quickly scaffold new Python projects with popular framewo
 ## Supported Templates
 
 | Template | Description | Dependencies |
-| --- | --- | --- |
+|----------|-------------|--------------|
 | `script` | Basic Python script (default) | None |
 | `fastapi` | FastAPI web framework | fastapi, uvicorn |
 | `flask` | Flask web framework | flask |
@@ -26,14 +26,34 @@ A command-line tool to quickly scaffold new Python projects with popular framewo
 
 ## Installation
 
-1. **Install the package**:
+You can install the Python Project Bootstrapper using one of the following methods:
 
+### Option 1: Install via pip (Recommended)
+1. **Install the package**:
    ```bash
    pip install project-bootstrapper
    ```
 
 2. **Verify installation**:
+   ```bash
+   bootstrapper --help
+   ```
 
+   This will display the help menu for the `bootstrapper` command, confirming the tool is installed correctly.
+
+### Option 2: Clone the Repository
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/project-bootstrapper.git
+   cd project-bootstrapper
+   ```
+
+2. **Install the package**:
+   ```bash
+   pip install .
+   ```
+
+3. **Verify installation**:
    ```bash
    bootstrapper --help
    ```
@@ -62,7 +82,6 @@ bootstrapper --interactive
 ```
 
 The interactive mode will prompt you for:
-
 - Project name
 - Git initialization (y/n)
 - Virtual environment creation (y/n)
@@ -73,7 +92,7 @@ The interactive mode will prompt you for:
 ### Command Line Options
 
 | Option | Description | Default |
-| --- | --- | --- |
+|--------|-------------|---------|
 | `--name` | Name of the new project | Required (unless interactive) |
 | `--path` | Directory to create the project in | Current directory |
 | `--git-init` | Initialize Git repository | False |
@@ -110,7 +129,6 @@ bootstrapper --name my-api --template fastapi --git-init --venv --license MIT
 ```
 
 This creates a FastAPI project with:
-
 - FastAPI boilerplate code
 - Git repository initialized
 - Virtual environment created
@@ -133,25 +151,21 @@ bootstrapper --interactive
 ## Template Details
 
 ### FastAPI Template
-
 - Creates a basic FastAPI app with a root endpoint
 - Includes uvicorn for running the server
 - Ready to run with: `uvicorn src.main:app --reload`
 
 ### Flask Template
-
 - Basic Flask application with a home route
 - Includes debug mode enabled
 - Ready to run with: `python src/main.py`
 
 ### Django Template
-
 - Placeholder with instructions for Django project creation
 - Includes django in requirements.txt
 - Use `django-admin startproject` for actual Django setup
 
 ### Discord Bot Template
-
 - Basic bot with ping command
 - Includes event handlers for bot ready state
 - Requires Discord bot token configuration
@@ -159,13 +173,11 @@ bootstrapper --interactive
 ## Getting Started After Creation
 
 1. **Navigate to your project**:
-
    ```bash
    cd myproject
    ```
 
 2. **Activate virtual environment** (if created):
-
    ```bash
    # On Windows
    venv\Scripts\activate
@@ -175,13 +187,11 @@ bootstrapper --interactive
    ```
 
 3. **Install dependencies**:
-
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Run your project**:
-
    ```bash
    python src/main.py
    ```
@@ -193,7 +203,6 @@ This bootstrapper tool is created by Yeke Daniel and can be used to generate pro
 ## Contributing
 
 Feel free to extend this tool by:
-
 - Adding new templates
 - Improving existing templates
 - Adding more configuration options
