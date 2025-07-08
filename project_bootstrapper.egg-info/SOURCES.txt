@@ -1,0 +1,9 @@
+README.md
+setup.py
+bootstrapper/__init__.py
+bootstrapper/cli.py
+project_bootstrapper.egg-info/PKG-INFO
+project_bootstrapper.egg-info/SOURCES.txt
+project_bootstrapper.egg-info/dependency_links.txt
+project_bootstrapper.egg-info/entry_points.txt
+project_bootstrapper.egg-info/top_level.txt

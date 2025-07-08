@@ -9,8 +9,8 @@ setup(
             "bootstrapper=bootstrapper.cli:main",  # 'main' function in cli.py
         ],
     },
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Yeke Daniel",
+    author_email="Danielyeke489@gmail.com",
     description="A CLI tool to bootstrap Python projects with Git and venv support.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
