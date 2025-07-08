@@ -14,7 +14,7 @@ setup(
     description="A CLI tool to bootstrap Python projects with Git and venv support.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/project-bootstrapper",  # update this after pushing to GitHub
+    url="https://github.com/Danny26y/python-cli-bootstrapper",  # update this after pushing to GitHub
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
