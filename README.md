@@ -14,7 +14,7 @@ A command-line tool to quickly scaffold new Python projects with popular framewo
 ## Supported Templates
 
 | Template | Description | Dependencies |
-|----------|-------------|--------------|
+| --- | --- | --- |
 | `script` | Basic Python script (default) | None |
 | `fastapi` | FastAPI web framework | fastapi, uvicorn |
 | `flask` | Flask web framework | flask |
@@ -26,9 +26,19 @@ A command-line tool to quickly scaffold new Python projects with popular framewo
 
 ## Installation
 
-1. Save the script as `bootstrap.py` (or any name you prefer)
-2. Make it executable: `chmod +x bootstrap.py`
-3. Optionally, add it to your PATH for global access
+1. **Install the package**:
+
+   ```bash
+   pip install project-bootstrapper
+   ```
+
+2. **Verify installation**:
+
+   ```bash
+   bootstrapper --help
+   ```
+
+   This will display the help menu for the `bootstrapper` command, confirming the tool is installed correctly.
 
 ## Usage
 
@@ -36,22 +46,23 @@ A command-line tool to quickly scaffold new Python projects with popular framewo
 
 ```bash
 # Basic usage
-python bootstrap.py --name myproject
+bootstrapper --name myproject
 
 # With additional options
-python bootstrap.py --name myproject --template fastapi --git-init --venv --license MIT --path ~/projects
+bootstrapper --name myproject --template fastapi --git-init --venv --license MIT --path ~/projects
 
 # Full example
-python bootstrap.py --name my-web-app --template flask --git-init --venv --license Apache --path ./projects
+bootstrapper --name my-web-app --template flask --git-init --venv --license Apache --path ./projects
 ```
 
 ### Interactive Mode
 
 ```bash
-python bootstrap.py --interactive
+bootstrapper --interactive
 ```
 
 The interactive mode will prompt you for:
+
 - Project name
 - Git initialization (y/n)
 - Virtual environment creation (y/n)
@@ -62,7 +73,7 @@ The interactive mode will prompt you for:
 ### Command Line Options
 
 | Option | Description | Default |
-|--------|-------------|---------|
+| --- | --- | --- |
 | `--name` | Name of the new project | Required (unless interactive) |
 | `--path` | Directory to create the project in | Current directory |
 | `--git-init` | Initialize Git repository | False |
@@ -95,10 +106,11 @@ myproject/
 ### Create a FastAPI Project
 
 ```bash
-python bootstrap.py --name my-api --template fastapi --git-init --venv --license MIT
+bootstrapper --name my-api --template fastapi --git-init --venv --license MIT
 ```
 
 This creates a FastAPI project with:
+
 - FastAPI boilerplate code
 - Git repository initialized
 - Virtual environment created
@@ -108,34 +120,38 @@ This creates a FastAPI project with:
 ### Create a Discord Bot
 
 ```bash
-python bootstrap.py --name discord-bot --template discordbot --venv --license Apache
+bootstrapper --name discord-bot --template discordbot --venv --license Apache
 ```
 
 ### Interactive Flask Project
 
 ```bash
-python bootstrap.py --interactive
+bootstrapper --interactive
 # Then select flask template and configure options interactively
 ```
 
 ## Template Details
 
 ### FastAPI Template
+
 - Creates a basic FastAPI app with a root endpoint
 - Includes uvicorn for running the server
 - Ready to run with: `uvicorn src.main:app --reload`
 
 ### Flask Template
+
 - Basic Flask application with a home route
 - Includes debug mode enabled
 - Ready to run with: `python src/main.py`
 
 ### Django Template
+
 - Placeholder with instructions for Django project creation
 - Includes django in requirements.txt
 - Use `django-admin startproject` for actual Django setup
 
 ### Discord Bot Template
+
 - Basic bot with ping command
 - Includes event handlers for bot ready state
 - Requires Discord bot token configuration
@@ -143,11 +159,13 @@ python bootstrap.py --interactive
 ## Getting Started After Creation
 
 1. **Navigate to your project**:
+
    ```bash
    cd myproject
    ```
 
 2. **Activate virtual environment** (if created):
+
    ```bash
    # On Windows
    venv\Scripts\activate
@@ -157,11 +175,13 @@ python bootstrap.py --interactive
    ```
 
 3. **Install dependencies**:
+
    ```bash
    pip install -r requirements.txt
    ```
 
 4. **Run your project**:
+
    ```bash
    python src/main.py
    ```
@@ -173,6 +193,7 @@ This bootstrapper tool is created by Yeke Daniel and can be used to generate pro
 ## Contributing
 
 Feel free to extend this tool by:
+
 - Adding new templates
 - Improving existing templates
 - Adding more configuration options
@@ -180,10 +201,10 @@ Feel free to extend this tool by:
 
 ## Requirements
 
-- Python 3.7+
+- Python 3.6+
 - Git (optional, for --git-init)
 - Internet connection (for installing dependencies)
 
 ---
 
-*Happy coding! *
+*Happy coding!*
