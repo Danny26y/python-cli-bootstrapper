@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
 Name: project-bootstrapper
-Version: 0.1.0
+Version: 0.1.1
 Summary: A CLI tool to bootstrap Python projects with Git and venv support.
-Home-page: https://github.com/yourusername/project-bootstrapper
+Home-page: https://github.com/Danny26y/python-cli-bootstrapper
 Author: Yeke Daniel
 Author-email: Danielyeke489@gmail.com
 Classifier: Programming Language :: Python :: 3
@@ -98,17 +98,17 @@ The bootstrapper creates the following directory structure:
 
 ```
 myproject/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ __init__.py
-â”‚   â””â”€â”€ main.py          # Template-specific code
-â”œâ”€â”€ tests/
-â”‚   â””â”€â”€ test_main.py     # Test file template
-â”œâ”€â”€ venv/                # Virtual environment (if --venv)
-â”œâ”€â”€ .git/                # Git repository (if --git-init)
-â”œâ”€â”€ .gitignore           # Python-specific gitignore
-â”œâ”€â”€ README.md            # Basic project README
-â”œâ”€â”€ requirements.txt     # Dependencies (if template has any)
-â””â”€â”€ LICENSE             # License file (if specified)
+├── src/
+│   ├── __init__.py
+│   └── main.py          # Template-specific code
+├── tests/
+│   └── test_main.py     # Test file template
+├── venv/                # Virtual environment (if --venv)
+├── .git/                # Git repository (if --git-init)
+├── .gitignore           # Python-specific gitignore
+├── README.md            # Basic project README
+├── requirements.txt     # Dependencies (if template has any)
+└── LICENSE             # License file (if specified)
 ```
 
 ## Examples
